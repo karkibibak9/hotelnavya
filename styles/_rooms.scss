@@ -1,14 +1,76 @@
-
+.overlay {
+    position: relative;
+    z-index: 0;
+}
+.overlay::before {
+    position: absolute;
+    content: "";
+    background-color: #1f1f1f;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+// video_area
+.video_bg {
+    background-image: url("/img/video/video.png");
+    background-attachment: fixed;
+}
+.video_area {
+    padding: 250px 0;
+    background-size: cover;
+    background-position: center center;
+    .video_area_inner {
+        span {
+            font-size: 14px;
+            color: #fff;
+        }
+        h3 {
+            font-size: 46px;
+            color: #fff;
+            line-height: 56px;
+            font-weight: 400;
+            margin-top: 12px;
+            margin-bottom: 28px;
+        }
+        a {
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            line-height: 60px;
+            font-size: 15px;
+            color: #009dff;
+            display: inline-block;
+            @include border-radius(50%);
+            i {
+                position: relative;
+                left: 2px;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {
+    .video_area {
+        padding: 100px 0;
+        .video_area_inner {
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}
 
 .our_accommodations {
+    padding: 93px 0;
+    display: block;
+    overflow: hidden;
+
     .rooms_here {
         .single_rooms {
             position: relative;
             width: 50%;
-            @media #{sm} {
-                width: 100%;
-                margin-bottom: 30px;
-            }
             &::before {
                 position: absolute;
                 left: 0;
@@ -44,8 +106,8 @@
                 // z-index: 8;
                 img {
                     width: 100%;
-                      @include transform(scale(1));
-                      @include transition(.5s);
+                    @include transform(scale(1));
+                    @include transition(0.5s);
                 }
                 .room_heading {
                     position: absolute;
@@ -53,12 +115,6 @@
                     right: 0;
                     bottom: 0px;
                     padding: 60px 60px 47px 60px;
-                    @media #{sm} {
-                        padding: 20px;
-                    }
-                    @media #{md} {
-                        padding: 20px;
-                    }
                     span {
                         font-size: 14px;
                         color: #ffffff;
@@ -72,9 +128,6 @@
                         color: #fff;
                         position: relative;
                         z-index: 8;
-                        @media #{sm} {
-                            font-size: 20px;
-                        }
                     }
                     a {
                         color: #fff;
@@ -94,7 +147,7 @@
             &:hover {
                 img {
                     width: 100%;
-                      @include transform(scale(1.1));
+                    @include transform(scale(1.1));
                 }
                 .room_heading {
                     a {
@@ -106,10 +159,20 @@
             }
         }
     }
-    @include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(md) {
+    .our_accommodations {
+        padding-top: 0;
         .rooms_here {
             .single_rooms {
                 width: 100%;
+                margin-bottom: 30px;
+
+                .room_thumb {
+                    .room_heading {
+                        padding: 20px;
+                    }
+                }
             }
         }
     }
