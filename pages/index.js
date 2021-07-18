@@ -41,10 +41,79 @@ export default function Home() {
       <section className='our_accommodations'>
         <div className="container">
           <div className="heading text-center">
-            <h1>Our Accommodations</h1>
+            <h2 className=' text-wrap'>Our Accommodations</h2>
           </div>
+          <div class="rooms_here">
+            <div class="single_rooms">
+              <div class="room_thumb">
+                <img src="img/rooms/1.png" alt="" />
+                <div class="room_heading d-flex justify-content-between align-items-center">
+                  <div class="room_heading_inner">
+                    <span>From $250/night</span>
+                    <h3>Superior Room</h3>
+                  </div>
+                  <a href="#" class="line-button">book now</a>
+                </div>
+              </div>
+            </div>
+            <div class="single_rooms">
+              <div class="room_thumb">
+                <img src="img/rooms/2.png" alt="" />
+                <div class="room_heading d-flex justify-content-between align-items-center">
+                  <div class="room_heading_inner">
+                    <span>From $250/night</span>
+                    <h3>Deluxe Room</h3>
+                  </div>
+                  <a href="#" class="line-button">book now</a>
+                </div>
+              </div>
+            </div>
+            <div class="single_rooms">
+              <div class="room_thumb">
+                <img src="img/rooms/3.png" alt="" />
+                <div class="room_heading d-flex justify-content-between align-items-center">
+                  <div class="room_heading_inner">
+                    <span>From $250/night</span>
+                    <h3>Signature Room</h3>
+                  </div>
+                  <a href="#" class="line-button">book now</a>
+                </div>
+              </div>
+            </div>
+            <div class="single_rooms">
+              <div class="room_thumb">
+                <img src="img/rooms/4.png" alt="" />
+                <div class="room_heading d-flex justify-content-between align-items-center">
+                  <div class="room_heading_inner">
+                    <span>From $250/night</span>
+                    <h3>Couple Room</h3>
+                  </div>
+                  <a href="#" class="line-button">book now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="row">
+            <div className="col">
+              <div className="card-wrapper">
+                <img src="http://bit.ly/2tMBBTd" alt="" />
+                <div className="card-body">
+                  <div className="product-text">
+                    <h1>Harvest Vase</h1>
+                    <h2>by studio and friends</h2>
+                    <p>Harvest Vases are a reinterpretation of peeled fruits and vegetables as functional objects. The surfaces appear to be sliced and pulled aside, allowing room for growth. </p>
+                    <div className="product-price-btn">
+                      <p><span>78</span>$</p>
+                      <button type="button">buy now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
         </div>
-        
+
+
       </section>
       <section className='book_a_table'>
         <div className="row">
@@ -56,7 +125,45 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section></section>
+      <section className='cards'>
+        <div className="cards-list">
+
+          <div className="card 1">
+            <div className="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+            <div className="card_title title-white">
+              <p>Card Title</p>
+            </div>
+          </div>
+
+          <div className="card 2">
+            <div className="card_image">
+              <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+            </div>
+            <div className="card_title title-white">
+              <p>Card Title</p>
+            </div>
+          </div>
+
+          <div className="card 3">
+            <div className="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div className="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+
+          <div className="card 4">
+            <div className="card_image">
+              <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+            </div>
+            <div className="card_title title-black">
+              <p>Card Title</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
       <section></section>
     </Fragment>
   )

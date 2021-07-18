@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 const Header = () => {
@@ -14,7 +14,7 @@ const Header = () => {
         }
 
     }
-   
+
     const onscroll = (el, listener) => {
         el.addEventListener('scroll', listener)
     }
@@ -38,9 +38,9 @@ const Header = () => {
         document.addEventListener("scroll", () => {
             const scrollCheck = window.scrollY;
             if (scrollCheck > 450) {
-                document.querySelector(".navigation").className = "navigation fixed-nav"
+                document.querySelector(".navbar").className = "navbar navbar-expand-lg fixed-top scrolled"
             } else {
-                document.querySelector(".navigation").className = "navigation";
+                document.querySelector(".navbar").className = "navbar navbar-expand-lg fixed-top";
             }
         })
         window.addEventListener('load', navbarlinksActive, { passive: true })
@@ -49,28 +49,64 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="navigation" >
-                <div className="nav-wrapper">
-                    <div className={show ? "logo logo-active" : "logo"}>
-                        <a href="/"><i className="fas fa-seedling"></i> NAVYA</a>
+            <nav className="navbar navbar-expand-lg fixed-top">
+                <div className="container">
+                    <a className="navbar-brand d-flex align-items-center" href="/">
+                        <i className="fas fa-seedling"></i>
+                        <span className="ml-3 font-weight-bold">Navya</span>
+                    </a>
+                    {/* <button className="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+                        <span className="navbar-toggler-icon"></span>
+                    </button> */}
+                    <div className={show ? 'menuIcon toggle ' : 'menuIcon'} onClick={() => setShow(!show)}>
+                        <span className="icon icon-bars" ></span>
+                        <span className="icon icon-bars overlay"></span>
                     </div>
 
-                    <ul className="menu d-none d-lg-block">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+
+
+                    <div className={show ? "collapse show navbar-collapse justify-content-around" : "collapse navbar-collapse justify-content-around"} id="navbar4">
+                        <ul className="navbar-nav mr-auto pl-lg-4">
+                            <li className="nav-item px-lg-2 active"> <a className="nav-link" href="#"> <span className="d-inline-block d-lg-none icon-width"><i className="fas fa-home"></i></span>Home</a> </li>
+                            <li className="nav-item px-lg-2"> <a className="nav-link" href="#"><span className="d-inline-block d-lg-none icon-width"><i className="fas fa-spa"></i></span>Services</a> </li>
+                            <li className="nav-item px-lg-2">
+                                <a className="nav-link" href="#">
+                                    <span className="d-inline-block d-lg-none icon-width">
+                                        <i className="far fa-user"></i>
+                                    </span>About</a>
+                            </li>
+
+                            <li className="nav-item px-lg-2"> <a className="nav-link" href="#"><span className="d-inline-block d-lg-none icon-width"><i className="far fa-envelope"></i></span>Contact</a> </li>
+                        </ul>
+                        <div className="navbar-social ml-auto mt-3 mt-lg-0">
+                            <a className="px-2" href="#">
+                                <i className="text-primary fab fa-twitter"></i>
+                            </a>
+                            <a className="px-2" href="#">
+                                <i className="text-primary fab fa-facebook"></i>
+                            </a>
+                            <a className="px-2" href="#">
+                                <i className="text-danger fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        {/* <ul className="navbar-nav ml-auto mt-3 mt-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
+                                    <i className="text-primary fab fa-twitter"></i>
+                                </a> </li>
+                            <li className="nav-item"> <a className="nav-link" href="#">
+                                <i className="text-primary fab fa-facebook"></i>
+                            </a> </li>
+                            <li className="nav-item"> <a className="nav-link" href="#">
+                                <i className="text-danger fab fa-instagram"></i>
+                            </a> </li>
+
+                        </ul> */}
+                    </div>
+
                 </div>
-            </nav>
 
-            <div className={show ? 'menuIcon toggle ' : 'menuIcon'} onClick={() => setShow(!show)}>
-                <span className="icon icon-bars" ></span>
-                <span className="icon icon-bars overlay"></span>
-            </div>
-
-
-            {show &&
+                {/* {show &&
                 <div className="overlay-menu">
                     <ul id="menu">
                         <li><a href="#home">Home</a></li>
@@ -79,7 +115,12 @@ const Header = () => {
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-            }
+            } */}
+            </nav>
+           
+
+
+
         </header>
     )
 }
