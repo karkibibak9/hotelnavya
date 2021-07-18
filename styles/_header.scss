@@ -5,6 +5,7 @@
     color: $icon-bar !important;
     // height: 80px;
     z-index: 12;
+    // @include transition(.3s);
     .navbar-brand {
         color: $base-color;
         letter-spacing: 1px;
@@ -144,9 +145,8 @@
 //         }
 //     }
 // }
-.navbar.scrolled {
+.navbar.scrolled, .navbar.active {
     background: $gray-100;
-    // background: $base-color;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     // height: 60px;
     // border: 1px solid $border;

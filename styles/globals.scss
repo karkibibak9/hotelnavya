@@ -99,6 +99,7 @@ section {
 @import "rooms";
 //footer
 @import "footer";
+
 .two_halves_content {
     .fist_content {
         height: 100%;
@@ -107,9 +108,11 @@ section {
         padding: 2em;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     }
-    .about_thumb .img_2 {
-        margin-top: 40px;
-        margin-left: 10px;
+    .about_thumb {
+        .img_2 {
+            margin-top: 40px;
+            margin-left: 10px;
+        }
     }
 }
 .heading {

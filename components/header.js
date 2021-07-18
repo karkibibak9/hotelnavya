@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 
 const Header = () => {
     const [show, setShow] = useState(false);
+    const navRef = useRef();
+
     const select = (el, all = false) => {
         el = el.trim()
         if (process.browser) {
@@ -38,18 +40,26 @@ const Header = () => {
         document.addEventListener("scroll", () => {
             const scrollCheck = window.scrollY;
             if (scrollCheck > 450) {
-                document.querySelector(".navbar").className = "navbar navbar-expand-lg fixed-top scrolled"
+                navRef.current.classList.add('scrolled')
             } else {
-                document.querySelector(".navbar").className = "navbar navbar-expand-lg fixed-top";
+                navRef.current.classList.remove('scrolled')
+                // document.querySelector(".navbar").className = "navbar navbar-expand-lg fixed-top";
             }
         })
         window.addEventListener('load', navbarlinksActive, { passive: true })
         onscroll(document, navbarlinksActive)
     }, [])
 
+    const toggleNav = ()=>{
+        navRef.current.classList.toggle('active')
+        console.log(navRef.current.classList)
+        setShow(!show)
+        
+    }
+
     return (
         <header>
-            <nav className="navbar navbar-expand-lg fixed-top">
+            <nav className="navbar navbar-expand-lg fixed-top" ref={navRef}>
                 <div className="container">
                     <a className="navbar-brand d-flex align-items-center" href="/">
                         <i className="fas fa-seedling"></i>
@@ -58,7 +68,7 @@ const Header = () => {
                     {/* <button className="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
                         <span className="navbar-toggler-icon"></span>
                     </button> */}
-                    <div className={show ? 'menuIcon toggle ' : 'menuIcon'} onClick={() => setShow(!show)}>
+                    <div className={show ? 'menuIcon toggle ' : 'menuIcon'} onClick={toggleNav}>
                         <span className="icon icon-bars" ></span>
                         <span className="icon icon-bars overlay"></span>
                     </div>
