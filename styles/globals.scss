@@ -86,7 +86,7 @@ main {
     // background: url("/img/banner/banner.png") fixed center center no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("/img/banner/resturant.jpg") fixed center center no-repeat;
-    background-position: 0px 0px;
+    // background-position: 0px 0px;
     background-size: cover;
 }
 section {
@@ -97,7 +97,8 @@ section {
 @import "header";
 // rooms
 @import "rooms";
-
+//footer
+@import "footer";
 .two_halves_content {
     .fist_content {
         height: 100%;

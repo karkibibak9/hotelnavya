@@ -1,0 +1,51 @@
+footer {
+    border-top: 1px solid $gray-300;
+    .mini-footer {
+        background: $footer-color;
+        text-align: center;
+        padding: 32px 0;
+
+        p {
+            margin: 0;
+            line-height: 26px;
+            font-size: 15px;
+            color: #999;
+            span {
+                color: #666;
+                font-size: 16px;
+                transform: translateX(-50%) translateY(-50%);
+                text-align: center;
+            }
+
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .fa {
+                color: #e90606;
+                margin: 0 3px;
+                font-size: 20px;
+                animation: pound 0.35s infinite alternate;
+                -webkit-animation: pound 0.35s infinite alternate;
+                @-webkit-keyframes pound {
+                    to {
+                        transform: scale(1.2);
+                    }
+                }
+                @keyframes pound {
+                    to {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            a {
+                color: #5867dd;
+                & :hover {
+                    color: #34bfa3;
+                }
+            }
+        }
+    }
+}

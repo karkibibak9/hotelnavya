@@ -43,52 +43,52 @@ export default function Home() {
           <div className="heading text-center">
             <h2 className=' text-wrap'>Our Accommodations</h2>
           </div>
-          <div class="rooms_here">
-            <div class="single_rooms">
-              <div class="room_thumb">
+          <div className="rooms_here">
+            <div className="single_rooms">
+              <div className="room_thumb">
                 <img src="img/rooms/1.png" alt="" />
-                <div class="room_heading d-flex justify-content-between align-items-center">
-                  <div class="room_heading_inner">
+                <div className="room_heading d-flex justify-content-between align-items-center">
+                  <div className="room_heading_inner">
                     <span>From $250/night</span>
                     <h3>Superior Room</h3>
                   </div>
-                  <a href="#" class="line-button">book now</a>
+                  <a href="#" className="line-button">book now</a>
                 </div>
               </div>
             </div>
-            <div class="single_rooms">
-              <div class="room_thumb">
+            <div className="single_rooms">
+              <div className="room_thumb">
                 <img src="img/rooms/2.png" alt="" />
-                <div class="room_heading d-flex justify-content-between align-items-center">
-                  <div class="room_heading_inner">
+                <div className="room_heading d-flex justify-content-between align-items-center">
+                  <div className="room_heading_inner">
                     <span>From $250/night</span>
                     <h3>Deluxe Room</h3>
                   </div>
-                  <a href="#" class="line-button">book now</a>
+                  <a href="#" className="line-button">book now</a>
                 </div>
               </div>
             </div>
-            <div class="single_rooms">
-              <div class="room_thumb">
+            <div className="single_rooms">
+              <div className="room_thumb">
                 <img src="img/rooms/3.png" alt="" />
-                <div class="room_heading d-flex justify-content-between align-items-center">
-                  <div class="room_heading_inner">
+                <div className="room_heading d-flex justify-content-between align-items-center">
+                  <div className="room_heading_inner">
                     <span>From $250/night</span>
                     <h3>Signature Room</h3>
                   </div>
-                  <a href="#" class="line-button">book now</a>
+                  <a href="#" className="line-button">book now</a>
                 </div>
               </div>
             </div>
-            <div class="single_rooms">
-              <div class="room_thumb">
+            <div className="single_rooms">
+              <div className="room_thumb">
                 <img src="img/rooms/4.png" alt="" />
-                <div class="room_heading d-flex justify-content-between align-items-center">
-                  <div class="room_heading_inner">
+                <div className="room_heading d-flex justify-content-between align-items-center">
+                  <div className="room_heading_inner">
                     <span>From $250/night</span>
                     <h3>Couple Room</h3>
                   </div>
-                  <a href="#" class="line-button">book now</a>
+                  <a href="#" className="line-button">book now</a>
                 </div>
               </div>
             </div>
