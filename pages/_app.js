@@ -11,11 +11,12 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <Component {...pageProps} />
       <Footer />
-      <MessengerCustomerChat
+      {/* <MessengerCustomerChat
         pageId={process.env.FB_PAGE_ID}
         appId={process.env.FB_APP_ID}
+        themeColor= '#ffafbd'
         // htmlRef="<REF_STRING>"
-      />
+      /> */}
     </Fragment>
   )
 }

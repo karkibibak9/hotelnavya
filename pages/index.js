@@ -6,8 +6,13 @@ import { Fragment } from 'react'
 export default function Home() {
   return (
     <Fragment>
-      <main>
-
+      <main className='hero_section'>
+        <div className="hero-container mb-5">
+          <h3>3 Star Family Friendly Hotel</h3>
+          <button type="button" className="btn btn-outline-secondary btn-lg my-3">
+            Book A Room
+          </button>
+        </div>
       </main>
       <section className='two_halves_content'>
         <div className="container">
@@ -18,7 +23,8 @@ export default function Home() {
                 <div>
                   <h2 className=''>YOUR HOME AWAY FROM HOME. </h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloribus aut soluta, quis aliquid autem quo aspernatur facere voluptas! Dicta laudantium ex fuga laborum voluptatem hic molestiae neque facere fugiat.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur ut, numquam accusamus facere aut cum neque consequatur voluptate saepe ratione odit expedita doloremque necessitatibus, omnis in optio possimus voluptas.
+                    Tenetur quidem nulla labore rem dolorem animi illo, dolorum quaerat, eius iusto a praesentium provident, autem recusandae dolores consequuntur! Blanditiis nobis eligendi veniam, harum 
                   </p>
                 </div>
               </div>
@@ -125,7 +131,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='cards'>
+      {/* <section className='cards'>
         <div className="cards-list">
 
           <div className="card 1">
@@ -163,7 +169,7 @@ export default function Home() {
           </div>
 
         </div>
-      </section>
+      </section> */}
       <section></section>
     </Fragment>
   )

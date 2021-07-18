@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import Link from 'next/link';
+import { useRouter } from "next/router";
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -52,7 +53,6 @@ const Header = () => {
 
     const toggleNav = () => {
         navRef.current.classList.toggle('active')
-        console.log(navRef.current.classList)
         setShow(!show)
 
     }
@@ -77,23 +77,10 @@ const Header = () => {
 
                     <div className={show ? "collapse show navbar-collapse justify-content-around" : "collapse navbar-collapse justify-content-around"} id="navbar4">
                         <ul className="navbar-nav mr-auto pl-lg-4">
-                            <li className="nav-item px-lg-2 active">
-                                <a className="nav-link" href="#">
-                                    <span className="d-inline-block d-lg-none icon-width"><i className="fas fa-home"></i>
-                                    </span>Home
-                                </a>
-                            </li>
-                            <li className="nav-item px-lg-2"> <a className="nav-link" href="#"><span className="d-inline-block d-lg-none icon-width"><i className="fas fa-spa"></i></span>Services</a>
-                            </li>
-                            <li className="nav-item px-lg-2">
-                                <a className="nav-link" href="#">
-                                    <span className="d-inline-block d-lg-none icon-width">
-                                        <i className="far fa-user"></i>
-                                    </span>About</a>
-                            </li>
-
-                            <li className="nav-item px-lg-2"> <a className="nav-link" href="#"><span className="d-inline-block d-lg-none icon-width"><i className="far fa-envelope"></i></span>Contact</a>
-                            </li>
+                            <NavItem onClick={()=>setShow(false)} link='/' title='Home' />
+                            <NavItem onClick={()=>setShow(false)} link='/rooms' title='Rooms' />
+                            <NavItem onClick={()=>setShow(false)} link='/about' title='About' />
+                            <NavItem onClick={()=>setShow(false)} link='/contact' title='Contact' />
                         </ul>
                         <div className="navbar-social ml-auto my-3 my-lg-0">
                             <a className="px-2" href="#">
@@ -139,6 +126,20 @@ const Header = () => {
 
 
         </header>
+    )
+}
+
+function NavItem(props) {
+    const router = useRouter();
+
+    return (
+        <li className="nav-item px-2" onClick={props.onClick}>
+            <Link href={props.link} passHref >
+                <a className={router.pathname === props.link ? "active nav-link" : "nav-link "} >
+                    {props.title}
+                </a>
+            </Link>
+        </li>
     )
 }
 
