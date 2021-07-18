@@ -23,8 +23,7 @@ export default function Home() {
                 <div>
                   <h2 className=''>YOUR HOME AWAY FROM HOME. </h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur ut, numquam accusamus facere aut cum neque consequatur voluptate saepe ratione odit expedita doloremque necessitatibus, omnis in optio possimus voluptas.
-                    Tenetur quidem nulla labore rem dolorem animi illo, dolorum quaerat, eius iusto a praesentium provident, autem recusandae dolores consequuntur! Blanditiis nobis eligendi veniam, harum 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officia nihil odit blanditiis repellendus eligendi, tempora consequuntur sint officiis exercitationem aut rem inventore quod, obcaecati, illum a laborum ducimus incidunt!
                   </p>
                 </div>
               </div>
@@ -99,29 +98,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* <div className="row">
-            <div className="col">
-              <div className="card-wrapper">
-                <img src="http://bit.ly/2tMBBTd" alt="" />
-                <div className="card-body">
-                  <div className="product-text">
-                    <h1>Harvest Vase</h1>
-                    <h2>by studio and friends</h2>
-                    <p>Harvest Vases are a reinterpretation of peeled fruits and vegetables as functional objects. The surfaces appear to be sliced and pulled aside, allowing room for growth. </p>
-                    <div className="product-price-btn">
-                      <p><span>78</span>$</p>
-                      <button type="button">buy now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
 
 
       </section>
-      <section className='book_a_table'>
+      {/* <section className='book_a_table'>
         <div className="row">
           <div className="col-12 col-md-6">
 
@@ -130,7 +111,7 @@ export default function Home() {
 
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <section className='cards'>
         <div className="cards-list">
 
@@ -170,7 +151,90 @@ export default function Home() {
 
         </div>
       </section> */}
-      <section></section>
+      <div className="video_area video_bg overlay">
+        <div className="video_area_inner text-center">
+          <span>Hotel Navya</span>
+          <h3>Relax and Enjoy your <br />
+            Vacation </h3>
+          <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" className="video_btn popup-video">
+            <i className="fa fa-play"></i>
+          </a>
+        </div>
+      </div>
+      <section id="services">
+        <div className="container">
+          <div className="heading text-center">
+            <h2 className=' text-wrap'>Facilities</h2>
+            <h3 className="pb-4">अतिथिदेवो भव</h3>
+          </div>
+          <div className="row py-2">
+
+            <div className="col-12 col-md-4 my-2 text-center">
+              <div className="service-item rounded text-center">
+                <div>
+                  <i className="fas fa-utensils text-secondary"></i>
+                  <h4 className="text-capitalize">Resturant</h4>
+                  <p>Delicious and Nutritious food.</p>
+                </div>
+              </div>
+              
+            </div>
+            <div className="col-12 col-md-4 my-2 text-center">
+              <div className="service-item rounded text-center">
+                <div>
+                  <i className="fas fa-rss text-secondary"></i>
+                  <h4 className="text-capitalize">Free WiFi</h4>
+                  <p>Business center with high speed internet acess.</p>
+                </div>
+              </div>
+
+            </div>
+            <div className="col-12 col-md-4 my-2 text-center">
+              <div className="service-item rounded text-center">
+                <div>
+                  <i className="fas fa-child text-secondary"></i>
+                  <h4 className="text-capitalize">Children activities</h4>
+                  <p>Kid/Family Friendly environment.</p>
+                </div>
+              </div>
+
+            </div>
+            <div className="col-12 col-md-4 my-2 text-center">
+              <div className="service-item rounded text-center">
+                <div>
+                  <i className="fas fa-car text-secondary"></i>
+                  <h4 className="text-capitalize ">VALET PARKING</h4>
+                  <p>Spacious area for your vehicles.</p>
+                </div>
+              </div>
+
+            </div>
+            <div className="col-12 col-md-4 my-2 text-center">
+              <div className="service-item rounded text-center">
+                <div>
+                  <i className="fas fa-concierge-bell text-secondary"></i>
+                  <h4 className="text-capitalize">Room service</h4>
+                  <p>24 hours room service.</p>
+                </div>
+              </div>
+
+            </div>
+            <div className="col-12 col-md-4 my-2 text-center">
+              <div className="service-item rounded text-center">
+                <div>
+                  <i className="fas fa-paw text-secondary"></i>
+                  <h4 className="text-capitalize ">Pets allowed</h4>
+                  <p>Dog/Pet Friendly.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
     </Fragment>
   )
 }
