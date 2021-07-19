@@ -6,6 +6,7 @@ import { Fragment } from 'react'
 export default function Home() {
   return (
     <Fragment>
+      {}
       <main className='hero_section'>
         <div className="hero-container mb-5">
           <h3>3 Star Family Friendly Hotel</h3>
