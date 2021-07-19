@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
         <MessengerCustomerChat
           pageId={process.env.FB_PAGE_ID}
           appId={process.env.FB_APP_ID}
-          themeColor='#ffafbd'
+          // themeColor='#ffafbd'
         // htmlRef="<REF_STRING>"
         />
       }
