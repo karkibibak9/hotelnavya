@@ -72,7 +72,7 @@ const Header = () => {
 
 
 
-                    <div className={show ? "collapse show navbar-collapse justify-content-around" : "collapse navbar-collapse justify-content-around"} id="navbar4">
+                    <div className="collapse navbar-collapse justify-content-around" id="navbar4">
                         <ul className="navbar-nav mr-auto pl-lg-4">
                             <NavItem onClick={()=>setShow(false)} link='/' title='Home' />
                             <NavItem onClick={()=>setShow(false)} link='/rooms' title='Rooms' />
@@ -92,14 +92,47 @@ const Header = () => {
                         </div>
                     </div>
 
+                    <div className={show ? 'mobile-nav is-active d-block d-lg-none' : 'd-none'}>
+                        <div className="bg-cover"></div>
+                        <div className="nav-content">
+                            <div className="row">
+                                <div className="col-8 mx-auto">
+                                    <ul className="navbar-nav mr-auto">
+                                        <NavItem onClick={() => setShow(false)} link='/' title='Home' />
+                                        <NavItem onClick={() => setShow(false)} link='/rooms' title='Rooms' />
+                                        <NavItem onClick={() => setShow(false)} link='/about' title='About' />
+                                        <NavItem onClick={() => setShow(false)} link='/contact' title='Contact' />
+                                    </ul>
+                                    <div className="navbar-social ml-auto my-3">
+                                        <a className="px-2" href="#">
+                                            <i className="text-primary fab fa-twitter"></i>
+                                        </a>
+                                        <a className="px-2" href="#">
+                                            <i className="text-primary fab fa-facebook"></i>
+                                        </a>
+                                        <a className="px-2" href="#">
+                                            <i className="text-danger fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={show ? 'mobile-nav is-active d-lg-none d-flex  align-items-center' : "mobile-nav d-lg-none d-flex  align-items-center"}>
+                        <button className='hamburger-menu' onClick={toggleNav}>
+                            <div className="line1"></div>
+                            <div className="line2"></div>
+                            <div className="line3"></div>
+                        </button>
+                    </div>
+
                 </div>
 
+                
             </nav>
-
-            <div className={show ? 'menuIcon toggle ' : 'menuIcon'} onClick={toggleNav}>
-                <span className="icon icon-bars"></span>
-                <span className="icon icon-bars overlay"></span>
-            </div>
+            
+            
 
 
         </header>
