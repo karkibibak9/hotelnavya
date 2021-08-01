@@ -10,7 +10,7 @@ const About = () => {
                     <div className="row justify-content-center mb-5 pb-3">
                         <div className="col-md-7 heading-section text-center ftco-animate">
                             <span className="subheading">Welcome to Harbor Lights Hotel</span>
-                            <h2 className="mb-4">You'll Never Want To Leave</h2>
+                            <h3 className="mb-4 mt-2">You'll Never Want To Leave</h3>
                         </div>
                     </div>
                     <div className="row d-flex">

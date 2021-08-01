@@ -40,7 +40,7 @@ const Header = () => {
     useEffect(() => {
         document.addEventListener("scroll", () => {
             const scrollCheck = window.scrollY;
-            if (scrollCheck > 450) {
+            if (scrollCheck > 400) {
                 navRef.current.classList.add('scrolled')
             } else {
                 navRef.current.classList.remove('scrolled')
@@ -65,12 +65,6 @@ const Header = () => {
                         <i className="fas fa-seedling"></i>
                         <span className="ml-3 font-weight-bold">Navya</span>
                     </a>
-                    {/* <button className="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
-                        <span className="navbar-toggler-icon"></span>
-                    </button> */}
-                    
-
-
 
                     <div className="collapse navbar-collapse justify-content-around" id="navbar4">
                         <ul className="navbar-nav mr-auto pl-lg-4">

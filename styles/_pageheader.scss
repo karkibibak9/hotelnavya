@@ -13,7 +13,7 @@
     background-size: cover;
     background-position: center center;
     text-align: center;
-    padding: 249px 0 159px 0;
+    padding: 269px 0 159px 0;
     h3 {
         font-size: 60px;
         color: #fff;
@@ -24,9 +24,18 @@
 }
 @include media-breakpoint-down(md) {
     .page_header {
-        padding: 150px 0;
+        padding: 180px 0 160px 0;
         h3 {
             font-size: 30px;
         }
     }
+}
+.subheading {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: $gray-600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
 }
