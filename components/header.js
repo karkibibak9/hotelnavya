@@ -68,10 +68,7 @@ const Header = () => {
                     {/* <button className="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
                         <span className="navbar-toggler-icon"></span>
                     </button> */}
-                    <div className={show ? 'menuIcon toggle ' : 'menuIcon'} onClick={toggleNav}>
-                        <span className="icon icon-bars" ></span>
-                        <span className="icon icon-bars overlay"></span>
-                    </div>
+                    
 
 
 
@@ -93,36 +90,16 @@ const Header = () => {
                                 <i className="text-danger fab fa-instagram"></i>
                             </a>
                         </div>
-                        {/* <ul className="navbar-nav ml-auto mt-3 mt-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <i className="text-primary fab fa-twitter"></i>
-                                </a> </li>
-                            <li className="nav-item"> <a className="nav-link" href="#">
-                                <i className="text-primary fab fa-facebook"></i>
-                            </a> </li>
-                            <li className="nav-item"> <a className="nav-link" href="#">
-                                <i className="text-danger fab fa-instagram"></i>
-                            </a> </li>
-
-                        </ul> */}
                     </div>
 
                 </div>
 
-                {/* {show &&
-                <div className="overlay-menu">
-                    <ul id="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            } */}
             </nav>
 
-
+            <div className={show ? 'menuIcon toggle ' : 'menuIcon'} onClick={toggleNav}>
+                <span className="icon icon-bars"></span>
+                <span className="icon icon-bars overlay"></span>
+            </div>
 
 
         </header>

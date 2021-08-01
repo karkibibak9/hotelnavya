@@ -99,68 +99,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-
       </section>
-      {/* <section className='book_a_table'>
-        <div className="row">
-          <div className="col-12 col-md-6">
-
-          </div>
-          <div className="col-12 col-md-6">
-
+      <section>
+        <div className="video_area video_bg overlay">
+          <div className="video_area_inner text-center">
+            <span>Hotel Navya</span>
+            <h3>Relax and Enjoy your <br />
+              Vacation </h3>
+            <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" className="video_btn popup-video">
+              <i className="fa fa-play"></i>
+            </a>
           </div>
         </div>
-      </section> */}
-      {/* <section className='cards'>
-        <div className="cards-list">
-
-          <div className="card 1">
-            <div className="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-            <div className="card_title title-white">
-              <p>Card Title</p>
-            </div>
-          </div>
-
-          <div className="card 2">
-            <div className="card_image">
-              <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
-            </div>
-            <div className="card_title title-white">
-              <p>Card Title</p>
-            </div>
-          </div>
-
-          <div className="card 3">
-            <div className="card_image">
-              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
-            </div>
-            <div className="card_title">
-              <p>Card Title</p>
-            </div>
-          </div>
-
-          <div className="card 4">
-            <div className="card_image">
-              <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
-            </div>
-            <div className="card_title title-black">
-              <p>Card Title</p>
-            </div>
-          </div>
-
-        </div>
-      </section> */}
-      <div className="video_area video_bg overlay">
-        <div className="video_area_inner text-center">
-          <span>Hotel Navya</span>
-          <h3>Relax and Enjoy your <br />
-            Vacation </h3>
-          <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" className="video_btn popup-video">
-            <i className="fa fa-play"></i>
-          </a>
-        </div>
-      </div>
+      </section>
+      
       <section id="services">
         <div className="container">
           <div className="heading text-center">

@@ -92,6 +92,8 @@ section {
 @import "pageheader";
 // rooms
 @import "rooms";
+//anout
+@import "about";
 //footer
 @import "footer";
 
@@ -202,7 +204,7 @@ section {
     @include media-breakpoint-down(md) {
         .service-item {
         padding: 0.6rem;
-        height: 170px;
+        height: 200px;
         i {
             font-size: 32px;
         }
